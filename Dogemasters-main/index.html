@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <audio id='ss' src='images/Hello--My-1 (1).mp3'></audio>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doge Blog</title>
+    <link rel="stylesheet" href="stl.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="header">
+        <a href="blog.html" title="Doge Blog" class="logo">
+            Doge Blog</a>
+        <div class="header-right">
+        </div>
+      </div>
+        <div class="doge">
+        <a href="blog.html" class="click" >
+        <img  src="images/unnamed.gif"></a>
+        <audio id='ss' src='images/Hello--My-1 (1).mp3'></audio>
+        <h3 onmouseover="PlaySound('ss')" 
+        onmouseout="StopSound('ss')" id="txt" >$$Hello My name is Doge! <br><br>
+            Welcome to DogeBlog <br> <br>
+           Please click on my image <br><br><br><br>
+           #to read Doge Articles...</h3>
+        </div>
+
+        <div class="footer">
+            <h3>Team Memebers</h3>
+            <strong>Darshan G<br> Badarinath H R<br> Pramod K L<br>Prasanna</strong>
+        </div>
+    
+   
+<script>
+        function PlaySound(ss) {
+            var thissound=document.getElementById(ss);
+            thissound.play();
+        }
+        
+        function StopSound(ss) {
+            var thissound=document.getElementById(ss);
+            thissound.pause();
+            thissound.currentTime = 0;
+        }
+</script>
+</body>
+
+</html>
